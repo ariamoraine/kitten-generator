@@ -1,12 +1,13 @@
 <!doctype html>
 <head>
 	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
-<title>Hello from Flask</title>
+<title>Free Kittens!</title>
 </head>
 <body>
-{% if name %}
-	<h1>Hello {{ name }} <a>you're looking lovely today!</a></h1>
-{% else %}
-	<h1>Hello World!@@@</h1>
-{% endif %}
+	{% if name %}
+		<h1>Hello {{ name }} <a>heres a kitten for you!</a></h1>
+		<img src="http://placekitten.com/700/700">
+	{% else %}
+		<h1>How can it be, no kittens on the internet!!!!</h1>
+	{% endif %}
 </body>
